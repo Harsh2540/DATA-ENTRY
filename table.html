@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Case Entries</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>All Case Entries</h1>
+    <table id="entryTable">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Case Name</th>
+          <th>Today Entry</th>
+          <th class="no-print">Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+   <p><strong>Total Entry:</strong> <span id="totalEntry">0</span></p>
+
+    <button onclick="addNewEntry()" class="no-print">Add New Entry</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

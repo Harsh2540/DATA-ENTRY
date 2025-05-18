@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f8ff;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #0077cc;
+}
+
+form label {
+  display: block;
+  margin: 10px 0;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #0077cc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+}
+
+/* Center action buttons */
+td .no-print {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+td button {
+  margin: 0 5px;
+}
+
+/* Center the total entry display */
+p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Print settings */
+.no-print {
+  display: inline;
+  border: none;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    padding: 0;
+  }
+
+  .container {
+    box-shadow: none;
+    max-width: 100%;
+  }
+
+  button, a {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  td button {
+    display: block;
+    margin: 5px auto;
+  }
+}
