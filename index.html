@@ -4,18 +4,22 @@
   <meta charset="UTF-8" />
   <title>Case Entry Form</title>
   <link rel="stylesheet" href="style.css" />
-<link rel="icon" href="images.png" type="image/x-icon" />
-
+  <link rel="icon" href="images.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
   <div class="container">
     <h1>Enter Case Details</h1>
     <form id="entryForm">
       <label for="date">Date</label>
-<input type="date" id="date" name="date" />
+      <input type="date" id="date" name="date" required />
 
-      <label>Case Name: <input type="text" id="caseName" required></label>
-      <label>Today Entry: <input type="number" id="todayEntry" required></label>
+      <label for="caseName">Case Name</label>
+      <input type="text" id="caseName" required />
+
+      <label for="todayEntry">Today Entry</label>
+      <input type="number" id="todayEntry" required />
+
       <button type="submit">Submit</button>
     </form>
     <a href="table.html" class="link">View All Entries</a>
@@ -24,5 +28,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
