@@ -9,20 +9,23 @@
 </head>
 <body>
   <div class="container">
-    <h1>Enter Case Details</h1>
+    <h1>Case Entry</h1>
     <form id="entryForm">
-      <label for="date">Date</label>
-      <input type="date" id="date" name="date" required />
-
-      <label for="caseName">Case Name</label>
-      <input type="text" id="caseName" required />
-
-      <label for="todayEntry">Today Entry</label>
-      <input type="number" id="todayEntry" required />
-
-      <button type="submit">Submit</button>
+      <div class="form-group">
+        <label for="date">📅 Date</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+      <div class="form-group">
+        <label for="caseName">📁 Case Name</label>
+        <input type="text" id="caseName" placeholder="Enter case name" required />
+      </div>
+      <div class="form-group">
+        <label for="todayEntry">🧮 Today Entry</label>
+        <input type="number" id="todayEntry" placeholder="Enter today's entry" required />
+      </div>
+      <button type="submit">➕ Submit</button>
     </form>
-    <a href="table.html" class="link">View All Entries</a>
+    <a href="table.html" class="link">📄 View All Entries</a>
   </div>
 
   <script src="script.js"></script>
